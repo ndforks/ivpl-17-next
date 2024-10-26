@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Payment_Methods
+ * @AllowDynamicProperties
  */
 class Payment_Methods extends Admin_Controller
 {
@@ -79,5 +79,4 @@ class Payment_Methods extends Admin_Controller
         $this->mdl_payment_methods->delete($id);
         redirect('payment_methods');
     }
-
 }

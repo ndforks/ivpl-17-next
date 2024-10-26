@@ -14,7 +14,7 @@ if ( ! defined('BASEPATH')) {
  */
 
 /**
- * Class Mdl_Quotes.
+ * @AllowDynamicProperties
  */
 class Mdl_Quotes extends Response_Model
 {

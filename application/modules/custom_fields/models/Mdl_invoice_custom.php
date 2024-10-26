@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_Invoice_Custom
+ * @AllowDynamicProperties
  */
 class Mdl_Invoice_Custom extends Validator
 {
@@ -75,5 +75,4 @@ class Mdl_Invoice_Custom extends Validator
         $this->db->where('ip_invoice_custom.invoice_id', $invoice_id);
         return $this;
     }
-
 }

@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_Clients
+ * @AllowDynamicProperties
  */
 class Mdl_Clients extends Response_Model
 {
@@ -256,5 +256,4 @@ class Mdl_Clients extends Response_Model
         $this->filter_where('client_active', 1);
         return $this;
     }
-
 }

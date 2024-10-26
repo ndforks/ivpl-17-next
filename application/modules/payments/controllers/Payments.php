@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Payments
+ * @AllowDynamicProperties
  */
 class Payments extends Admin_Controller
 {
@@ -182,5 +182,4 @@ class Payments extends Admin_Controller
         $this->mdl_payments->delete($id);
         redirect('payments');
     }
-
 }

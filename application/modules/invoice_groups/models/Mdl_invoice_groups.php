@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_Invoice_Groups
+ * @AllowDynamicProperties
  */
 class Mdl_Invoice_Groups extends Response_Model
 {
@@ -125,5 +125,4 @@ class Mdl_Invoice_Groups extends Response_Model
         $this->db->set('invoice_group_next_id', 'invoice_group_next_id+1', false);
         $this->db->update($this->table);
     }
-
 }

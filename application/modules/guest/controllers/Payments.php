@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Payments
+ * @AllowDynamicProperties
  */
 class Payments extends Guest_Controller
 {
@@ -46,5 +46,4 @@ class Payments extends Guest_Controller
         $this->layout->buffer('content', 'guest/payments_index');
         $this->layout->render('layout_guest');
     }
-
 }

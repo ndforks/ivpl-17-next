@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Tax_Rates
+ * @AllowDynamicProperties
  */
 class Tax_Rates extends Admin_Controller
 {
@@ -77,5 +77,4 @@ class Tax_Rates extends Admin_Controller
         $this->mdl_tax_rates->delete($id);
         redirect('tax_rates');
     }
-
 }

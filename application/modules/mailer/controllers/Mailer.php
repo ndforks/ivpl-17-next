@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mailer
+ * @AllowDynamicProperties
  */
 class Mailer extends Admin_Controller
 {
@@ -220,5 +220,4 @@ class Mailer extends Admin_Controller
             redirect('mailer/quote/' . $quote_id);
         }
     }
-
 }

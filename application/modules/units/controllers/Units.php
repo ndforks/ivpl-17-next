@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Units
+ * @AllowDynamicProperties
  */
 class Units extends Admin_Controller
 {
@@ -84,5 +84,4 @@ class Units extends Admin_Controller
         $this->mdl_units->delete($id);
         redirect('units');
     }
-
 }

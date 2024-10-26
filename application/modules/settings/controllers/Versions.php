@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Versions
+ * @AllowDynamicProperties
  */
 class Versions extends Admin_Controller
 {
@@ -37,5 +37,4 @@ class Versions extends Admin_Controller
         $this->layout->buffer('content', 'settings/versions');
         $this->layout->render();
     }
-
 }

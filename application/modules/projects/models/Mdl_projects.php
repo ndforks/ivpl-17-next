@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_Projects
+ * @AllowDynamicProperties
  */
 class Mdl_Projects extends Response_Model
 {
@@ -76,5 +76,4 @@ class Mdl_Projects extends Response_Model
 
         return $result;
     }
-
 }

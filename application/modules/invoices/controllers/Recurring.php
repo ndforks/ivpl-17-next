@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Recurring
+ * @AllowDynamicProperties
  */
 class Recurring extends Admin_Controller
 {
@@ -56,5 +56,4 @@ class Recurring extends Admin_Controller
         $this->mdl_invoices_recurring->delete($invoice_recurring_id);
         redirect('invoices/recurring/index');
     }
-
 }

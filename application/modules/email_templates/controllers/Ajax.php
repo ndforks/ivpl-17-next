@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Ajax
+ * @AllowDynamicProperties
  */
 class Ajax extends Admin_Controller
 {
@@ -25,5 +25,4 @@ class Ajax extends Admin_Controller
 
         echo json_encode($this->mdl_email_templates->get_by_id($id));
     }
-
 }

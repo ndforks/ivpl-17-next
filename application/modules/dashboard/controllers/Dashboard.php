@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Dashboard
+ * @AllowDynamicProperties
  */
 class Dashboard extends Admin_Controller
 {
@@ -47,5 +47,4 @@ class Dashboard extends Admin_Controller
         $this->layout->buffer('content', 'dashboard/index');
         $this->layout->render();
     }
-
 }

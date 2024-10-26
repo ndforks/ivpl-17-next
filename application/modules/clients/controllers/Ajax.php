@@ -11,11 +11,10 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Ajax
+ * @AllowDynamicProperties
  */
 class Ajax extends Admin_Controller
 {
-
     public $ajax_controller = true;
 
     public function name_query()
@@ -133,5 +132,4 @@ class Ajax extends Admin_Controller
 
         $this->layout->load_view('clients/partial_notes', $data);
     }
-
 }

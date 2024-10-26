@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Custom_Fields
+ * @AllowDynamicProperties
  */
 class Custom_Fields extends Admin_Controller
 {
@@ -81,5 +81,4 @@ class Custom_Fields extends Admin_Controller
         $this->mdl_custom_fields->delete($id);
         redirect('custom_fields');
     }
-
 }

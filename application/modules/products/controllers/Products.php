@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Products
+ * @AllowDynamicProperties
  */
 class Products extends Admin_Controller
 {
@@ -84,5 +84,4 @@ class Products extends Admin_Controller
         $this->mdl_products->delete($id);
         redirect('products');
     }
-
 }

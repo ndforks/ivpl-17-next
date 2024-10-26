@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Invoices
+ * @AllowDynamicProperties
  */
 class Invoices extends Guest_Controller
 {
@@ -139,5 +139,4 @@ class Invoices extends Guest_Controller
 
         generate_invoice_sumex($invoice_id);
     }
-
 }

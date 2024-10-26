@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Email_Templates
+ * @AllowDynamicProperties
  */
 class Email_Templates extends Admin_Controller
 {
@@ -90,5 +90,4 @@ class Email_Templates extends Admin_Controller
         $this->mdl_email_templates->delete($id);
         redirect('email_templates');
     }
-
 }

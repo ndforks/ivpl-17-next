@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class View
+ * @AllowDynamicProperties
  */
 class View extends Base_Controller
 {
@@ -255,5 +255,4 @@ class View extends Base_Controller
 
         redirect('guest/view/quote/' . $quote_url_key);
     }
-
 }

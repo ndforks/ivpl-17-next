@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Ajax
+ * @AllowDynamicProperties
  */
 class Ajax extends Admin_Controller
 {
@@ -102,5 +102,4 @@ class Ajax extends Admin_Controller
 
         $this->layout->load_view('payments/partial_payment_table', $data);
     }
-
 }

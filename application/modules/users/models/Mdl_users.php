@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_Users
+ * @AllowDynamicProperties
  */
 class Mdl_Users extends Response_Model
 {
@@ -310,5 +310,4 @@ class Mdl_Users extends Response_Model
         $this->load->helper('orphan');
         delete_orphans();
     }
-
 }

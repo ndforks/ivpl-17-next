@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Reports
+ * @AllowDynamicProperties
  */
 class Reports extends Admin_Controller
 {
@@ -99,5 +99,4 @@ class Reports extends Admin_Controller
 
         $this->layout->buffer('content', 'reports/sales_by_year_index')->render();
     }
-
 }

@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_Quote_Custom
+ * @AllowDynamicProperties
  */
 class Mdl_Quote_Custom extends Validator
 {
@@ -83,5 +83,4 @@ class Mdl_Quote_Custom extends Validator
         $this->db->where('ip_quote_custom.quote_id', $quote_id);
         return $this;
     }
-
 }

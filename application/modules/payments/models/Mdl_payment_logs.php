@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_Payment_Logs
+ * @AllowDynamicProperties
  */
 class Mdl_Payment_Logs extends Response_Model
 {
@@ -34,5 +34,4 @@ class Mdl_Payment_Logs extends Response_Model
     {
         $this->db->join('ip_invoices', 'ip_invoices.invoice_id = ip_merchant_responses.invoice_id');
     }
-
 }

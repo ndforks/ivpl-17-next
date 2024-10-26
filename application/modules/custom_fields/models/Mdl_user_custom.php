@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_User_Custom
+ * @AllowDynamicProperties
  */
 class Mdl_User_Custom extends Validator
 {
@@ -98,5 +98,4 @@ class Mdl_User_Custom extends Validator
         $result = $this->where('ip_user_custom.user_id', $user_id)->get()->result();
         return $result;
     }
-
 }

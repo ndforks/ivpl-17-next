@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_Import
+ * @AllowDynamicProperties
  */
 class Mdl_Import extends Response_Model
 {
@@ -420,5 +420,4 @@ class Mdl_Import extends Response_Model
         $this->load->helper('orphan');
         delete_orphans();
     }
-
 }

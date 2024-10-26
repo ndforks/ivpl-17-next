@@ -13,11 +13,10 @@ if (!defined('BASEPATH')) {
  */
 
 /**
- * Class Invoices
+ * @AllowDynamicProperties
  */
 class Invoices extends Admin_Controller
 {
-
     /**
      * Invoices constructor.
      */
@@ -338,5 +337,4 @@ class Invoices extends Admin_Controller
             $this->mdl_invoice_amounts->calculate($invoice_id->invoice_id);
         }
     }
-
 }

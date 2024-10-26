@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_Invoices_Recurring
+ * @AllowDynamicProperties
  */
 class Mdl_Invoices_Recurring extends Response_Model
 {
@@ -149,5 +149,4 @@ class Mdl_Invoices_Recurring extends Response_Model
         $this->db->where('invoice_recurring_id', $invoice_recurring_id);
         $this->db->update('ip_invoices_recurring', $db_array);
     }
-
 }

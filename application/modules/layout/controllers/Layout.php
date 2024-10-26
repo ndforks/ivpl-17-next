@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Layout
+ * @AllowDynamicProperties
  */
 class Layout extends MX_Controller
 {
@@ -80,5 +80,4 @@ class Layout extends MX_Controller
 
         $this->load->view($view, $data);
     }
-
 }

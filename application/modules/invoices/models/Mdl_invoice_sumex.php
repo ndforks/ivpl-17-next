@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  */
 
 /**
- * Class Mdl_Invoice_Tax_Rates
+ * @AllowDynamicProperties
  */
 class Mdl_invoice_sumex extends Response_Model
 {
@@ -79,5 +79,4 @@ class Mdl_invoice_sumex extends Response_Model
             )
         );
     }
-
 }
